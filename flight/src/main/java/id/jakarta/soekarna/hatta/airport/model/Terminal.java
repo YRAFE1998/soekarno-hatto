@@ -1,5 +1,9 @@
 package id.jakarta.soekarna.hatta.airport.model;
 
+
+import jakarta.enterprise.inject.Model;
+
+
 public class Terminal {
 
   private String terminalName;

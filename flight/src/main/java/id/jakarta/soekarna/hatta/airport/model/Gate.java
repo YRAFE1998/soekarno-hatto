@@ -1,5 +1,8 @@
 package id.jakarta.soekarna.hatta.airport.model;
 
+import jakarta.enterprise.inject.Model;
+
+
 public class Gate {
   private final String gateNumber;
   private final Terminal terminal;

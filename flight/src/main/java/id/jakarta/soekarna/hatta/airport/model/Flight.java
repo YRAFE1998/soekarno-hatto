@@ -1,7 +1,9 @@
 package id.jakarta.soekarna.hatta.airport.model;
 
-import java.time.LocalDate;
+import jakarta.enterprise.inject.Model;
+
 import java.time.LocalDateTime;
+
 
 public abstract class Flight {
   private final String flightNumber;
@@ -17,6 +19,7 @@ public abstract class Flight {
   }
 
   public abstract void updateTime(LocalDateTime newTime);
+  public abstract LocalDateTime getTime();
 
   public String getFlightNumber() {
     return flightNumber;
@@ -52,4 +55,6 @@ public abstract class Flight {
     DELAYED,
     CANCELLED
   }
+
+
 }

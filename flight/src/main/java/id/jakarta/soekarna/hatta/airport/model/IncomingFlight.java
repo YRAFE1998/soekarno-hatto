@@ -1,6 +1,9 @@
 package id.jakarta.soekarna.hatta.airport.model;
 
+import jakarta.enterprise.inject.Model;
+
 import java.time.LocalDateTime;
+
 
 public class IncomingFlight extends Flight{
   private LocalDateTime arrivalTime;
@@ -29,5 +32,10 @@ public class IncomingFlight extends Flight{
   @Override
   public void updateTime(LocalDateTime newTime) {
     this.arrivalTime = newTime;
+  }
+
+  @Override
+  public LocalDateTime getTime() {
+    return getArrivalTime();
   }
 }
